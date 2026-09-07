@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "phases": [
+    "VISION_DRAFT",
+    "VISION_LOCKED",
+    "EXPERIENCE_DRAFT",
+    "EXPERIENCE_LOCKED",
+    "SYSTEM_DRAFT",
+    "SYSTEM_LOCKED",
+    "PREMORTEM_DRAFT",
+    "PREMORTEM_LOCKED",
+    "PLAN_DRAFT",
+    "PLAN_LOCKED",
+    "BUILDING",
+    "VERIFYING",
+    "RELEASE_READY",
+    "SHIPPED"
+  ],
+  "gate_statuses": [
+    "PENDING",
+    "PASS",
+    "HOLD",
+    "FAIL",
+    "STALE"
+  ],
+  "transitions": {
+    "VISION_DRAFT": [
+      "VISION_LOCKED"
+    ],
+    "VISION_LOCKED": [
+      "EXPERIENCE_DRAFT"
+    ],
+    "EXPERIENCE_DRAFT": [
+      "EXPERIENCE_LOCKED"
+    ],
+    "EXPERIENCE_LOCKED": [
+      "SYSTEM_DRAFT"
+    ],
+    "SYSTEM_DRAFT": [
+      "SYSTEM_LOCKED"
+    ],
+    "SYSTEM_LOCKED": [
+      "PREMORTEM_DRAFT"
+    ],
+    "PREMORTEM_DRAFT": [
+      "PREMORTEM_LOCKED"
+    ],
+    "PREMORTEM_LOCKED": [
+      "PLAN_DRAFT"
+    ],
+    "PLAN_DRAFT": [
+      "PLAN_LOCKED"
+    ],
+    "PLAN_LOCKED": [
+      "BUILDING"
+    ],
+    "BUILDING": [
+      "VERIFYING"
+    ],
+    "VERIFYING": [
+      "BUILDING",
+      "RELEASE_READY"
+    ],
+    "RELEASE_READY": [
+      "SHIPPED"
+    ],
+    "SHIPPED": []
+  }
+}

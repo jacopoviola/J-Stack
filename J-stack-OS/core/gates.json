@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "gates": {
+    "vision": {
+      "type": "H",
+      "required": [
+        "00_constitution/PRODUCT_VISION.md",
+        "00_constitution/PRODUCT_PRINCIPLES.md",
+        "MLP_DEFINITION.md"
+      ]
+    },
+    "experience": {
+      "type": "H",
+      "required": [
+        "01_experience/USER_FLOWS.md",
+        "01_experience/SCREEN_MAP.md",
+        "01_experience/SCREEN_CONTRACTS.md",
+        "01_experience/STATE_MATRIX.md",
+        "01_experience/PROTOTYPE_CONTRACT.md"
+      ]
+    },
+    "system": {
+      "type": "H+A",
+      "required": [
+        "02_system/CONCEPTUAL_ARCHITECTURE.md",
+        "02_system/DATA_MODEL.md",
+        "02_system/INVARIANTS.md",
+        "02_system/FAILURE_MODEL.md",
+        "02_system/SCALE_ASSUMPTIONS.md",
+        "02_system/TECH_STACK.md"
+      ]
+    },
+    "premortem": {
+      "type": "H",
+      "required": [
+        "03_premortem/RISKS.md",
+        "03_premortem/PREVENTIVE_DECISIONS.md"
+      ]
+    },
+    "plan": {
+      "type": "H+A",
+      "required": [
+        "04_plan/PLAN.md",
+        "04_plan/BUILD_ORDER.md",
+        "04_plan/ACCEPTANCE_CRITERIA.md",
+        "04_plan/TEST_MATRIX.md"
+      ]
+    },
+    "lake": {
+      "type": "E+A+H",
+      "required": []
+    },
+    "release": {
+      "type": "E+H",
+      "required": [
+        "06_release/RELEASE_GATE.md"
+      ]
+    }
+  }
+}
