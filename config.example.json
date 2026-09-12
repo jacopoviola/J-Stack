@@ -1,0 +1,9 @@
+{
+  "jstack_home": "~/J-stack-OS",
+  "primary_host": "claude",
+  "adversary_host": "codex",
+  "obsidian_vault_path": "",
+  "browser_harness": "auto",
+  "default_deployment_preference": "evaluate_per_project",
+  "question_mode": "one_at_a_time"
+}

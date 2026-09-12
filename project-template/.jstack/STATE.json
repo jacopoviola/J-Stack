@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "project_name": "",
+  "phase": "VISION_DRAFT",
+  "active_lake": null,
+  "gates": {
+    "vision": "PENDING",
+    "experience": "PENDING",
+    "system": "PENDING",
+    "premortem": "PENDING",
+    "plan": "PENDING",
+    "release": "PENDING"
+  },
+  "locked_at": {},
+  "open_decisions": [],
+  "next_recommended_skill": "vision",
+  "human_approval_required": false,
+  "stale_reason": null
+}
