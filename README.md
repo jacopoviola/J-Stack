@@ -97,7 +97,7 @@ C. ...
 D. Other / explain in my own words
 ```
 
-The agent must wait for the answer before asking the next question.
+The agent must wait for the answer before asking the next question. Decisions already prepared for one lake or milestone may instead be presented together as decision cards; see `docs/COLLABORATION.md`.
 
 ## Architecture-learning invariant
 
@@ -117,6 +117,6 @@ The agent then translates the behavioral answer into technical options, teaches 
 
 J-stack contains **no unbounded autonomous loops**.
 
-A reviewer may review once per invocation. A verifier may run a bounded deterministic test suite. A fix requires an explicit human-authorized action. Re-review happens only after a human chooses to run it again.
+A reviewer may review once per invocation. A verifier may run a bounded deterministic test suite. A fix requires an explicit human-authorized action. Re-review happens only after a human chooses to run it again, or inside a correction budget the human set in advance.
 
-See `docs/WORKFLOW.md`, `docs/GATES.md`, and `docs/AGENT_ROLES.md`.
+See `docs/WORKFLOW.md`, `docs/GATES.md`, `docs/AGENT_ROLES.md`, and `docs/COLLABORATION.md`.

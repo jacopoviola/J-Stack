@@ -8,8 +8,9 @@ Claude Code is initially the **primary cockpit**. It may act as interrogator, ex
 - adversarial review should use an independent model/provider when configured;
 - deterministic verification outranks model confidence;
 - QA is report-first by default; fixing a QA finding requires a separate authorized build action;
-- one human question at a time;
-- no autonomous review/fix/review loops.
+- one human question at a time, except prepared decision cards;
+- no autonomous review/fix/review loops outside a human-set correction budget;
+- decision rights, claims, evidence provenance, and handoffs follow `docs/COLLABORATION.md`.
 
 For technical teaching, use this compact format when a concept matters:
 

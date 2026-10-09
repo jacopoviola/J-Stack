@@ -56,7 +56,17 @@ Output must be `APPROVE` or `CHALLENGE`.
 
 For CHALLENGE include severity, exact concern, concrete failure scenario, evidence/reference, proposed mitigation, and confidence.
 
-The primary model triages into AGREE / DISAGREE / NEEDS HUMAN CONTEXT. It may not revise automatically.
+The primary model triages into AGREE / DISAGREE / NEEDS HUMAN CONTEXT. It may not revise automatically, except inside a correction budget.
+
+## Correction budget
+
+The human may set, in advance and per lake or assignment, a number of repair-and-re-review rounds that run without a new decision. It is recorded in the lake's `SPEC.md` before the first review.
+
+- It covers only defects inside the approved contract: implementation defects, missing verification, unsupported claims. Anything inside the escalation boundary (`core/autonomy_boundary.md`) or contradicting a locked artifact is a HOLD regardless of remaining budget.
+- Each round is one finite review of a frozen snapshot. Findings and their dispositions are recorded every round; nothing is incorporated silently.
+- Repeated related findings stop the rounds: report the root cause and a smaller coherent option instead of patching again.
+- An exhausted budget is a HOLD with a diagnosis and recovery proposal. It is never acceptance.
+- No budget recorded means zero: every CHALLENGE or FAIL returns to the human.
 
 ## Staleness
 

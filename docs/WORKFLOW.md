@@ -160,7 +160,7 @@ Builder reads only the context needed for the lake plus locked upstream contract
 
 ## 7. VERIFY
 
-Verification is a sequence of finite gates, not a loop.
+Verification is a sequence of finite gates, not a loop. Repair and re-review repeat only inside a human-set correction budget (`docs/GATES.md`).
 
 ### 7A. Deterministic checks — E
 Compilation/type checking, lint, unit/integration/contract tests, migration validation, security/static checks, accessibility, performance, and critical-path coverage as applicable. Evidence is fingerprinted against current working-tree content.

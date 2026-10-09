@@ -1,8 +1,8 @@
 # J-stack OS — Operating Principles
 
 1. **Human sovereignty.** Models recommend. The human decides.
-2. **No autonomous loops.** Every invocation is finite and has a stop condition.
-3. **One question at a time.** Never dump a questionnaire on the user.
+2. **No unbounded autonomous loops.** Every invocation is finite and has a stop condition. Repair and re-review may repeat only inside a correction budget the human set in advance (`docs/GATES.md`).
+3. **One question at a time.** Never dump a questionnaire on the user. Decisions already prepared with a recommendation may be presented together as decision cards (`docs/COLLABORATION.md`).
 4. **Vision before implementation.** Do not code around unresolved product intent.
 5. **Visual truth before production UI code.** Screens can lock experience before production implementation is committed.
 6. **Behavior before technology.** Architecture begins from required system behavior, not tool preference.

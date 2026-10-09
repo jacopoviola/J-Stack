@@ -5,10 +5,11 @@ J-stack OS is a finite-gate product-development system. This file is the compact
 ## Required behavior
 
 - Read `OPERATING_PRINCIPLES.md`.
+- Follow `docs/COLLABORATION.md` for decision rights, claims, evidence provenance, and handoffs.
 - When operating inside a project, read `.jstack/STATE.json` before doing work.
 - Never infer that a previous gate is approved unless state explicitly records it.
-- Ask exactly one human decision question at a time.
-- Do not autonomously loop between author and reviewer.
+- Ask exactly one human decision question at a time; prepared decision cards may be presented together.
+- Do not autonomously loop between author and reviewer outside a human-set correction budget.
 - Do not silently incorporate adversarial feedback.
 - Preserve locked upstream decisions unless the human explicitly reopens them.
 - If a material upstream artifact changes, mark affected downstream gates STALE.
