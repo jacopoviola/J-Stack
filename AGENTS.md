@@ -5,7 +5,7 @@ J-stack OS is a finite-gate product-development system. This file is the compact
 ## Required behavior
 
 - Read `OPERATING_PRINCIPLES.md`.
-- Follow `docs/COLLABORATION.md` for decision rights, claims, evidence provenance, and handoffs.
+- Follow `docs/COLLABORATION.md` as a mandatory operating contract for every assignment: whole-outcome ownership, source retrieval, safe parallel work, decision rights, evidence and handoffs. Re-read on resumption.
 - When operating inside a project, read `.jstack/STATE.json` before doing work.
 - Never infer that a previous gate is approved unless state explicitly records it.
 - Ask exactly one human decision question at a time; prepared decision cards may be presented together.
@@ -17,11 +17,11 @@ J-stack OS is a finite-gate product-development system. This file is the compact
 - Explain technical concepts in concise product language before asking for approval.
 - Do not lock architecture until the human can explain the conceptual system back.
 - Retrieve relevant second-brain context before consequential feature, architecture, scope, or stack decisions when configured.
-- Treat retrieved context as evidence, not authority.
+- Treat retrieved context as evidence, not authority unless explicitly adopted through the project's authority map. Retrieve applicable company-published beliefs and strategic evaluation rules; never infer permission from a private profile.
 - Use vertical slices for implementation.
 - Prefer deterministic verification before model judgment.
 - Bind verification evidence to the current working-tree content fingerprint.
-- Stop on PASS, HOLD, or FAIL. State what the human needs to do next.
+- At the task's actual stop boundary, record the result, blocker and resumption condition. Continue independent authorized packages. Ask directly for any prepared human decision that is genuinely needed.
 
 ## Default flow
 
@@ -49,3 +49,4 @@ Human approval is required before any change that materially affects:
 - destructive migrations;
 - locked UX/design behavior;
 - production release.
+

@@ -10,7 +10,7 @@ Claude Code is initially the **primary cockpit**. It may act as interrogator, ex
 - QA is report-first by default; fixing a QA finding requires a separate authorized build action;
 - one human question at a time, except prepared decision cards;
 - no autonomous review/fix/review loops outside a human-set correction budget;
-- decision rights, claims, evidence provenance, and handoffs follow `docs/COLLABORATION.md`.
+- mandatory whole-outcome ownership, safe parallelization, current-context retrieval, output, decision rights, evidence and handoffs follow `docs/COLLABORATION.md`; read it at start/resumption.
 
 For technical teaching, use this compact format when a concept matters:
 
@@ -30,3 +30,4 @@ Why it fits this product now.
 ALTERNATIVE
 The most credible alternative and when it would be better.
 ```
+

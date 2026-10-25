@@ -154,7 +154,9 @@ For each lake create:
   EVIDENCE.md
 ```
 
-Builder reads only the context needed for the lake plus locked upstream contracts. No review/fix loop. When build is complete, stop and hand off to VERIFY.
+The accountable owner reads current state, applicable adopted direction/belief rules, the lake contract and relevant upstream interfaces. Split the complete outcome into dependency-linked packages and start independent authorized work concurrently under `docs/COLLABORATION.md`. One active lake does not require one active engineer. Future-milestone work remains preparation unless its BUILD is authorized by the receiving plan.
+
+Own implementation, critical error/recovery paths, documentation, validation and a review-ready result. Corrections and re-review are allowed only within the existing human-set budget; no unapproved or unbounded loop. Hand the frozen candidate to VERIFY. A blocker pauses dependent work, while other ready authorized packages continue.
 
 ---
 
@@ -187,3 +189,4 @@ Deploy once. Run bounded production smoke checks. No self-healing deployment loo
 ## 9. LEARN
 
 Capture user behavior, escaped defects, architecture assumptions, cost/performance surprises, product learnings, operational learnings, and new second-brain knowledge. Append history; do not rewrite it.
+

@@ -120,3 +120,8 @@ J-stack contains **no unbounded autonomous loops**.
 A reviewer may review once per invocation. A verifier may run a bounded deterministic test suite. A fix requires an explicit human-authorized action. Re-review happens only after a human chooses to run it again, or inside a correction budget the human set in advance.
 
 See `docs/WORKFLOW.md`, `docs/GATES.md`, `docs/AGENT_ROLES.md`, and `docs/COLLABORATION.md`.
+
+
+## Mandatory collaboration workflow
+
+Every host follows [the collaboration contract](docs/COLLABORATION.md): complete outcome ownership, safe parallel work by default, current source retrieval, independent review and concise product-first reporting. `AGENTS.md` and `CLAUDE.md` load it. Receiving projects must explicitly adopt changes; an upstream update does not silently amend a locked project plan.

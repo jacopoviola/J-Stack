@@ -8,7 +8,7 @@
 6. **Behavior before technology.** Architecture begins from required system behavior, not tool preference.
 7. **Teach before lock.** The human must conceptually understand major architectural decisions before approval.
 8. **Search before building.** Check the repo, second brain, existing libraries, platform capabilities, and current patterns before inventing infrastructure.
-9. **Context is evidence, not authority.** Second-brain retrieval informs decisions; it does not make them.
+9. **Context is evidence, not authority.** Second-brain retrieval informs decisions; it does not make them. Explicitly adopted company doctrine has the authority recorded by the project; retrieve it without treating private personal material as permission.
 10. **Production-credible MLP.** Prefer simple, solid, observable, secure systems with a clear scaling path over both hacks and premature hyperscale complexity.
 11. **Vertical slices.** Build bounded end-to-end user outcomes, not disconnected frontend/backend task piles.
 12. **Independent verification.** The author should not be the only reviewer of consequential work.
@@ -20,3 +20,6 @@
 18. **Escalate irreversible decisions.** Destructive data changes, production access, billing, auth, permissions, migration strategy, public API contracts, and major vendor commitments require explicit human approval.
 19. **Explain disagreement.** If primary and adversarial models disagree, show both positions and the missing-context risk. Never resolve it silently.
 20. **Finish bounded work.** Within an approved lake, implement the complete defined outcome, including critical error paths and tests, before moving on.
+
+21. **Safe parallelism is mandatory.** Start independent authorized packages concurrently when dependencies, ownership, isolation and integration permit; otherwise state the concrete blocker. Respect the project's lake/packet limits. See `docs/COLLABORATION.md`.
+22. **Big picture before details.** Every substantial assignment connects product outcome, roadmap, milestone, package interfaces and evidence; refresh the relevant sources and carry the method through project entrypoints and decision records.

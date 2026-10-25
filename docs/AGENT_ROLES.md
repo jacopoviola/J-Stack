@@ -23,3 +23,4 @@ Prefers non-generative mechanisms: tests, type/lint/static analysis, migration c
 
 ## Host interchangeability
 Roles are logical roles, not vendor identities. Initial mapping is Claude Code + Codex + GitHub + browser QA. Future hosts can replace Claude without changing project state or gates. Several sessions of one host may hold different roles; the project records the assignment. How the roles work together is in `docs/COLLABORATION.md`.
+
