@@ -65,13 +65,36 @@ Exact scope of approval requested:
 
 ## Human update
 
-Lead with the conclusion; omit empty sections; keep test totals, logs, and code detail in the lake record.
+Use this structure for substantive coordinator replies and work assignments. The first body paragraph is at most **200 characters**, excluding its heading: plain, respectful language understandable without technical background, explaining the outcome and immediate work. Detailed technical references belong in the session prompts or linked evidence. Short in-progress updates and direct factual answers may stay short; do not manufacture a multi-session assignment to fill a template.
 
-1. **Outcome** — what changed for a customer or operator.
-2. **Flow** — what happens now, including the important failure path.
-3. **Status** — built, reviewed, proven, still pending.
-4. **Decision** — only when one is required, as a decision card.
-5. **Next** — the next complete package.
+```markdown
+# Overall to do
+<Plain-language outcome and immediate work; maximum 200 characters.>
+
+## Session reference and prompt
+
+SESSION A (model: <verified identifier, or unverified/proposed>):
+<Existing task reference and what changed, plus a complete copyable prompt when a new instruction is actually needed; otherwise No new assignment.>
+
+SESSION B (model: <verified identifier, or unverified/proposed>):
+<Existing task reference and what changed, plus a complete copyable prompt when a new instruction is actually needed; otherwise No new assignment.>
+
+CODEX (model: <verified identifier, or unverified/proposed>):
+<Exact candidate/review scope and required evidence; otherwise No new assignment.>
+
+## Paste back here
+<Only the result needed for the coordinator's next decision: outcome, exact refs, evidence/review links, unresolved findings and any decision. Default: Nothing.>
+
+### Founder ask
+Nothing.
+<Replace only when a genuine input/decision is required: direct question, recommendation, exact scope, needed-before point and consequence of waiting.>
+```
+
+Keep one combined session section; state which assignments can run in parallel and which depend on another result. Name actual roles/owners and task refs instead of transferring a branch from a default label. Do not imply a drafted prompt was sent or a session was started. Where a connected route is available and authorized, coordinate directly rather than make the founder relay routine steps. Request only missing results; never ask the founder to paste credentials, tokens, key material or raw sensitive logs.
+
+Report actual configured model identifiers only when verified. If unavailable, say `unverified`; label a recommendation `proposed`, not running. Choose models for task complexity, tools and authorized availability; do not invent a best-model ranking or automatically switch/pay for a fallback. Preserve reviewer independence and pass current sources, exact refs, evidence and open questions when handing off or switching models. Default `Nothing` does not suppress a real reserved approval or missing input.
+
+This supersedes the earlier Outcome/Flow/Status/Decision/Next presentation order; those facts are retained inside the concise result and session handoff, not added as competing headings.
 
 ## Handoff
 
@@ -107,6 +130,20 @@ Separate the coordinator, architecture/readiness engineer, implementation engine
 
 Before a consequential instruction, retrieve current state, authority map, roadmap, packet, decisions and applicable company-published beliefs/moat method. Check the relevant sources, not every file indiscriminately. Distinguish founder-adopted operating doctrine from unadopted context and private personal material. Frame value now and strength tomorrow where the project's direction framework requires it; utility/security enablers need no invented moat. Never publish private beliefs or profiles into a public framework.
 
+## Two-way verification
+
+**Two-way review — required for consequential changes.** Review consequential changes in both directions. Trace approved promises to executed evidence, and trace implemented permissions, state changes, side effects and recovery behavior back to their governing requirements. Independently challenge the expected results and tests. Verify the combined candidate across component boundaries. Report missing, unjustified or contradictory behavior before acceptance.
+
+Use the existing packet, test matrix, review and evidence records. Check consequential behavior and required enabling infrastructure, not every variable or trivial function. Derive expected outcomes from the approved contract rather than mirroring the implementation; a passing mock or builder-written assertion cannot establish its own correctness. Integration checks cover relevant version mismatches, retries, concurrency and partial failure. Preserve valid unchanged evidence and existing review/correction limits; this creates no new lifecycle gate or mandatory full-system review for routine changes.
+
+## Complexity and simplicity trigger
+
+If the system becomes difficult to explain, delivery risks getting stuck, production code becomes hard to reason about, the UX gains effort/controls beyond the approved simple journey, or activities/packages/tools grow sharply relative to the approved plan, require a **bounded source-based review before expanding the affected path further**. State the observed signal, affected outcome and smallest decision to resolve; do not wait for a numerical complexity score.
+
+Select the relevant top-down, bottom-up, integration, product-roadmap, company-safe belief/MOAT or UX review. Retrieve the governing documents and use the existing direction/recovery record; do not commission every review on every trigger. Work backward from the approved customer outcome, identify missing versus unnecessary complexity, and recommend the smallest coherent simplification. Keep the customer surface minimalist without hiding consequential failure, permissions or uncertainty. The founder retains control of consequential UX; proposed changes to locked behavior follow the existing approval/amendment route.
+
+Pause only dependent unsafe or unapproved expansion. Continue independent authorized work, preserve scheduled safety/cleanup tasks, budgets and exhausted correction limits. Review is not authority to rewrite canon, add infrastructure, or restart a stopped repair loop. Report a concise result and ask the founder only for a consequential choice that remains after the authorized analysis.
+
 ## Delivery speed, review and stopping
 
 Reuse applicable decisions and unchanged valid evidence. Continue routine work within existing authority without another permission question. Report review findings and correct them inside the actual human-set scope and convergence budget; the reviewer does not silently edit or self-approve. Repeated related findings require a root-cause inventory and the smallest coherent recovery, not another layer of tooling. A stop condition pauses the affected path while independent authorized work continues.
@@ -120,3 +157,4 @@ When only future dates, missing credentials or reserved decisions remain, record
 At session start/resumption load this contract and the project's agent entrypoints, current refs/state and applicable decisions. Update the project's working agreement and durable decision record when explicit human instructions change the method. A chat memory, summary, repository file or instruction cannot guarantee that every future session has already loaded it; entrypoint retrieval is mandatory. Missing access or stale policy is disclosed before dependent consequential work.
 
 Explain product outcome → roadmap stage → milestone promise → connected packages → concrete action. Keep updates short: delivered/verified, current critical dependency, ready parallel work, then any exact human decision needed and its deadline. Ask directly when/why input is needed; batch related prepared choices with recommendations. Do not end with an unexplained 'the next step is yours'. Never claim to have sent a handoff or started a remote session without actually doing so.
+

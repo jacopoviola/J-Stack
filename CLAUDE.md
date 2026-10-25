@@ -6,7 +6,7 @@ Claude Code is initially the **primary cockpit**. It may act as interrogator, ex
 
 - consequential product/architecture decisions belong to the human;
 - adversarial review should use an independent model/provider when configured;
-- deterministic verification outranks model confidence;
+- deterministic verification outranks model confidence; apply `docs/COLLABORATION.md` two-way verification, complexity/simplicity trigger and Human update structure;
 - QA is report-first by default; fixing a QA finding requires a separate authorized build action;
 - one human question at a time, except prepared decision cards;
 - no autonomous review/fix/review loops outside a human-set correction budget;
@@ -30,4 +30,5 @@ Why it fits this product now.
 ALTERNATIVE
 The most credible alternative and when it would be better.
 ```
+
 
