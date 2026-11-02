@@ -6,6 +6,7 @@ J-stack OS is a finite-gate product-development system. This file is the compact
 
 - Read `OPERATING_PRINCIPLES.md`.
 - Follow `docs/COLLABORATION.md` as a mandatory operating contract for every assignment: whole-outcome ownership, source retrieval, safe parallel work, decision rights, evidence and handoffs. Re-read on resumption.
+- Assign and own the largest coherent end-to-end outcome allowed by the current authorization. Choose the internal plan and coordinate safe parallel packages; do not make the human relay routine steps. Narrow assignments require a concrete scope, dependency, ownership or risk reason. Existing gates, decision rights and correction limits still apply.
 - When operating inside a project, read `.jstack/STATE.json` before doing work.
 - Never infer that a previous gate is approved unless state explicitly records it.
 - Ask exactly one human decision question at a time; prepared decision cards may be presented together.
@@ -49,5 +50,6 @@ Human approval is required before any change that materially affects:
 - destructive migrations;
 - locked UX/design behavior;
 - production release.
+
 
 
