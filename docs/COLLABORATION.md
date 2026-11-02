@@ -124,7 +124,13 @@ Parallel BUILD follows the receiving project's approved lake/milestone concurren
 
 ## Whole-outcome assignments and system coherence
 
-Give an engineer a complete bounded result: investigation, implementation, critical failure/recovery behavior, meaningful verification, documentation, independent review and corrections already covered by the task. The human should not relay routine engineering steps. Map each building block to the customer outcome, producer/consumer interfaces, dependencies and acceptance examples; preserve vertical delivery rather than disconnected component piles.
+**Hard default — complete outcomes per request.** The coordinator and every execution host must assign and own the largest coherent end-to-end result that the current authorization permits. Define the outcome, current context, boundaries, accountable owner, required evidence and stop conditions; let the owning session determine its internal plan, subtasks, compliant component design and execution order within the approved architecture. A request should normally cover investigation, design, authorized implementation, critical failure/recovery behavior, meaningful verification, integration, documentation, independent review and corrections already covered by the task. Preparation-only authority remains preparation-only.
+
+The human should not relay routine engineering steps, approve an internal checklist one item at a time or issue a new prompt for each in-scope phase. Progress updates report evidence and decisions without surrendering the remaining authorized work. Continue eligible independent packages in parallel with one integration owner and the ownership/isolation rules above. Map each building block to the customer outcome, producer/consumer interfaces, dependencies and acceptance examples; preserve vertical delivery rather than disconnected component piles.
+
+Use a narrow assignment only for an explicitly requested narrow result or a concrete dependency, scope, ownership or risk boundary; state that reason briefly. Do not fragment a system merely to make each prompt small, and do not enlarge a task with unrelated work or new process machinery. Necessary step-by-step guidance for a human operator, sign-in or consequential approval remains appropriate.
+
+This rule delegates engineering planning, not human decision rights. It grants no new vendor, architecture, security, cost, resource, gate, acceptance or merge authority; it does not replace required independent review, transfer another owner's branch or extend an exhausted correction budget. At an actual blocker, record it, continue independent authorized work and return only the prepared decisions or inputs genuinely required.
 
 Separate the coordinator, architecture/readiness engineer, implementation engineer and independent reviewer. Several sessions may fill those roles; record actual assignments and explicit handoffs in the project. A default role never transfers another session's branch. The author is not the sole reviewer of consequential work.
 
@@ -157,4 +163,5 @@ When only future dates, missing credentials or reserved decisions remain, record
 At session start/resumption load this contract and the project's agent entrypoints, current refs/state and applicable decisions. Update the project's working agreement and durable decision record when explicit human instructions change the method. A chat memory, summary, repository file or instruction cannot guarantee that every future session has already loaded it; entrypoint retrieval is mandatory. Missing access or stale policy is disclosed before dependent consequential work.
 
 Explain product outcome → roadmap stage → milestone promise → connected packages → concrete action. Keep updates short: delivered/verified, current critical dependency, ready parallel work, then any exact human decision needed and its deadline. Ask directly when/why input is needed; batch related prepared choices with recommendations. Do not end with an unexplained 'the next step is yours'. Never claim to have sent a handoff or started a remote session without actually doing so.
+
 
